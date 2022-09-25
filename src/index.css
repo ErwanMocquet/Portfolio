@@ -1,0 +1,485 @@
+/* RESET CSS
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset CSS */
+
+@font-face {
+  font-family: "Scrivano";
+  src: local("Scrivano"),
+   url("./font/scrivano.otf") format("truetype");
+  font-weight: regular;
+  }
+
+@font-face {
+  font-family: "Glacial-Indifference-regular";
+  src: local("Glacial-Indifference-regular"),
+    url("./font/Glacial-indifference/GlacialIndifference-Regular.otf") format("truetype");
+  font-weight: regular;
+}  
+
+@font-face {
+  font-family: "Glacial-Indifference-bold";
+  src: local("Glacial-Indifference-bold"),
+    url("./font/Glacial-indifference/GlacialIndifference-Bold.otf") format("truetype");
+  font-weight: regular;
+}  
+
+@font-face {
+  font-family: "Glacial-Indifference-italic";
+  src: local("Glacial-Indifference-italic"),
+    url("./font/Glacial-indifference/GlacialIndifference-Italic.otf") format("truetype");
+  font-weight: regular;
+}  
+
+body{
+  background-color: #D5B895;
+}
+
+/* Display nav mobile version */
+
+#body-home{
+  background-image: url(./img/photo-portrait-def.jpg);
+  height: 100vh;
+  width: 100%;
+}
+  
+.navigation {
+  background-color: #A63131;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}   
+
+.navigation a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1.8rem 0.92em;
+  font-size: 0.8rem;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: Glacial-Indifference-regular;
+}
+    
+li {
+  display: inline;
+  list-style-type: square;
+  font-size: 0.65rem;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color: #BEBEBE;
+}
+
+nav a.active{
+  background-color: #D5B895;
+  color: black;
+  font-family: Glacial-Indifference-bold;
+}
+
+/* End display nav mobile version */
+
+/* Home Page mobile version */
+
+#home-page{
+  background-image: url(./img/photo-portrait-def.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.body-home{
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 1.5rem;
+  font-family: Scrivano;
+}
+
+.cursorColor{
+  color: #5D5C61;
+}
+
+#button-home-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32rem;
+}
+
+#button-home{
+  background-color: #A63131;
+  text-decoration: none;
+  color: white;
+  font-family: scrivano;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* End home page mobile version */
+/* About page mobile version */
+
+.titles{
+  font-family: Scrivano;
+  font-size: 2rem;
+  margin: 4rem 0 2rem 2rem;
+}
+
+.body-text{
+  font-family: Glacial-Indifference-regular;
+  margin: 1rem 2rem;
+}
+
+.photo-jol{
+  width: 70%;
+}
+
+.photo-container{
+  display: flex;
+  justify-content: center;
+}
+
+.icons-wrapper{
+  text-align: center;
+}
+
+.icons{
+  display: inline-block;
+  width: 10%;
+  margin: 1% 2% 0 1%
+}
+
+.name-text{
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family: Glacial-Indifference-italic;
+  margin-bottom: 2rem;
+}
+
+#margin-end{
+  margin-bottom: 80px;
+}
+
+/* End about page mobile version */
+/* Start project page mobile version */
+
+.project-container{
+  display: block;
+  width: 100%;
+  background-color: #A63131;
+  color: white;
+  margin-bottom: 4.4rem;
+}
+
+.project-container > article {
+  text-align: right;
+  padding: 1.5rem;
+  margin: auto 0 auto auto;
+}
+
+.project-container:nth-child(2n) > article {
+  text-align: left;
+  margin: auto auto auto 0;
+}
+
+.titles-project{
+  font-family: Glacial-Indifference-bold;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.content-project{
+  font-family: Glacial-Indifference-regular;
+}
+
+.link-project-container{
+  padding-top: 1rem;
+}
+
+.link-project{
+  font-family: Glacial-Indifference-bold;
+  text-decoration: none;
+  color: white;
+}
+
+.link-project:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.image-project{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* End project page mobile version */
+/* Start contact page mobile version */
+
+.full-contact-container{
+  text-align: center;
+}
+
+#title-contact{
+  font-size: 2rem;
+  margin-top: 40%;
+  font-family: Scrivano;
+}
+
+.text-contact-container{
+  margin-top: 3rem;
+  font-family: Glacial-Indifference-regular;
+}
+
+.text-contact{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.links-contact-container{
+  margin-top: 3rem;
+
+}
+
+.links-contact{
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  font-family: Glacial-Indifference-regular;
+}
+
+.links-contact:hover{
+  color: #92909a;
+}
+
+.links-contact:visited{
+  color: black;
+}
+
+#last-contact{
+  margin-top: 1rem;
+}
+
+#icons-contact{
+  margin-top: 2rem;
+}
+
+/* End contact page mobile version */
+
+/* Responsiveness for computer version*/
+
+@media (min-width: 769px) {
+
+  /* Display nav computer version*/
+
+  .navigation{
+    top: 0;
+    bottom: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* End display nav computer version */
+  /* Display home page computer version */
+
+  #home-page{
+    background-image: url(./img/photo-landscape-def.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+  }
+
+  .body-home{
+    padding-left: 28rem;
+    padding-top: 10rem;
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+
+  #button-home-wrap{
+    margin-top: 15rem;
+    margin-left: 28rem;
+  }
+
+  #button-home{
+    width: 200px;
+    height: 50px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  #button-home:hover{
+    transform: scale(1.05);
+    transition: .2s ease-in-out 0s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.9)
+  }
+
+  /* End display home page computer version */
+  /* Display about page computer version*/
+
+  .titles{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .body-text{
+    font-size: 1.5rem;
+  }
+
+  .text-grid{
+    display: flex;
+    float: left;
+    width: 40%;
+    padding: 15px 40px 0px 40px;
+  }
+
+  .photo-container{
+    display: flex;
+    float: right;
+    width: 45%;
+  }
+
+  .photo-jol{
+    width: 50%;
+  }
+
+  .icons-wrapper{
+    float: right;
+    width: 45%;
+    padding-top: 40px;
+  }
+
+  .icons{
+    width: 10%;
+  }
+
+  #first-part-about{
+    height: 30rem;
+  }
+
+  #second-part-about{
+    clear: both;
+  }
+
+  .wrapper-testi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* End display about page desktop version */
+  /* Display projects page desktop version*/
+
+  .project-container{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+  }
+
+  .project-container:nth-child(2n) {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .project-container:nth-child(2n) > figure {
+    order: 1;
+  }
+
+  .project-container:nth-child(2n) > article {
+    order: 2;
+  }
+
+  .titles-project{
+    font-size: 1.7rem;
+  }
+
+  .content-project{
+    font-size: 1.5rem;
+  }
+
+  .link-project{
+    font-size: 1.5rem;
+  }
+
+  .link-project:hover{
+    transition: .5s;
+    color: #92909a;
+  }
+
+  /* End display projects page desktop version*/
+  /* Display contact page desktop version */
+
+  #title-contact{
+    margin-top: 10%;
+  }
+
+  .icons-wrapper{
+    width: 100%;
+    float: none;
+  }
+
+  .icons{
+    width: 80px;
+  }
+
+  /* End display contact page desktop version*/
+
+}
+
+
